@@ -1,0 +1,51 @@
+/* ===== ОСНОВНАЯ СТРАНИЦА (каталог) ===== */
+
+.page-layout {
+    display: flex;              /* делаем горизонтальную раскладку */
+    gap: 20px;                  /* расстояние между колонками */
+    max-width: 1200px;          /* ограничение ширины страницы */
+    margin: 20px auto;          /* центрируем страницу + отступ сверху/снизу */
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+main {
+    flex: 1;
+}
+/* левая часть (товары) */
+.main-content {
+    flex: 1;                    /* занимает всё доступное место */
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* правая панель (фильтры) */
+.right-panel {
+    width: 300px;               /* фиксированная ширина сайдбара */
+}
+footer {
+    text-align: center;
+    color: #666;
+    padding: 20px 0;
+}
+/* ===== MOBILE (временно) ===== */
+
+@media (max-width: 768px) {
+
+    .page-layout {
+        flex-direction: column;   /* колонки становятся вертикальными */
+    }
+
+    .right-panel {
+        width: 100%;              /* панель на всю ширину */
+    }
+
+}

@@ -1,0 +1,348 @@
+/* ===== ФИЛЬТРЫ ===== */
+
+.filter {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.filter:last-child {
+    border-bottom: none;
+}
+
+.filter label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+/* ===== FILTER CONTAINER ===== */
+
+.experiment-box {
+    margin-top: 12px;
+    padding: 15px;
+    background: transparent;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+/* ===== FILTER TITLE ===== */
+
+.right-panel form > div {
+    margin-bottom: 12px;
+}
+
+.right-panel label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.right-panel input,
+.right-panel select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fff;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.right-panel input:focus,
+.right-panel select:focus {
+    border-color: #007BFF;
+}
+
+.right-panel button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #007BFF;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.right-panel button:hover {
+    background: #0069d9;
+}
+
+
+.right-panel h3 {
+    text-align: center;
+}
+
+
+.right-panel select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+/* hover */
+.right-panel select:hover {
+    border-color: #bbb;
+    background: #fafafa;
+}
+
+/* focus (когда кликнул) */
+.right-panel select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.15);
+    outline: none;
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+
+    padding: 0;
+    margin: 0;
+}
+
+.pagination li {
+    list-style: none;
+}
+
+/* кнопки */
+.pagination a,
+.pagination span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 34px;
+    height: 34px;
+    padding: 0 6px;
+
+    border-radius: 6px;
+    border: 1px solid #ddd;
+
+    text-decoration: none;
+    font-size: 14px;
+    color: #007BFF;
+    background: #fff;
+
+    transition: all 0.2s;
+}
+
+/* hover */
+.pagination a:hover {
+    background: #f1f5f9;
+}
+
+/* активная */
+.pagination .active span {
+    background: #007BFF;
+    color: #fff;
+    border-color: #007BFF;
+}
+
+/* disabled */
+.pagination .disabled span {
+    color: #aaa;
+    border-color: #eee;
+}
+
+.auth-form {
+    max-width: 400px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.auth-form input[type="email"],
+.auth-form input[type="password"],
+.auth-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    box-sizing: border-box;
+}
+
+.remember label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    cursor: pointer;
+}
+
+.remember input {
+    width: auto;
+}
+
+.auth-form button {
+    padding: 10px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.review-form {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f6f6f6;
+    border-radius: 8px;
+}
+
+.review-form h4 {
+    margin-bottom: 10px;
+}
+
+.my-review {
+    border: 2px solid #222;
+    background: #f9f9f9;
+}
+
+.review-head span{
+    margin-left: 10px;
+}
+/* =========================
+   FLASH SUCCESS (UI upgrade)
+========================= */
+
+.flash-success {
+    margin: 10px 0 15px;
+    padding: 12px 14px;
+
+    background: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    border-left: 4px solid #28a745;
+
+    border-radius: 10px;
+
+    color: #1b5e20;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+/* =========================
+   MY REVIEW (highlight)
+========================= */
+
+.review-card.highlight {
+    border-left: 4px solid #007BFF;
+    background: #f8fbff;
+}
+
+.review-card.highlight .review-head {
+    align-items: center;
+}
+
+/* =========================
+   DELETE BUTTON (clean UX)
+========================= */
+
+.review-delete-form {
+    margin-left: auto;
+}
+
+.review-delete-form button {
+    background: transparent;
+    border: 1px solid #ff6b6b;
+
+    color: #ff6b6b;
+    padding: 4px 8px;
+
+    border-radius: 6px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.review-delete-form button:hover {
+    background: #ff6b6b;
+    color: #fff;
+}
+
+.form-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    padding: 8px 14px;
+    background: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.success-msg {
+    margin-bottom: 10px;
+    color: green;
+}
+
+/* =========================
+   FORM ERROR MESSAGE
+========================= */
+
+.error {
+    margin-top: 6px;
+    padding: 6px 10px;
+
+    background: #fff5f5;
+    border: 1px solid #f5c2c7;
+    border-left: 4px solid #dc3545;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+    color: #b02a37;
+
+    line-height: 1.3;
+}
+
+
+
+/* ===== MOBILE ===== */
+@media (max-width: 480px) {
+
+    .pagination {
+        gap: 4px;
+    }
+
+    .pagination a,
+    .pagination span {
+        min-width: 28px;
+        height: 28px;
+        font-size: 12px;
+        padding: 0 4px;
+    }
+}
+
