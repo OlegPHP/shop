@@ -66,6 +66,8 @@
 
                 <form action="" method="GET">
 
+                        <input type="hidden" name="type" value="{{ request('type') }}">
+
 
                         @if(request('type') === 'smartphone' or !request('type'))
                         <div class="filter">

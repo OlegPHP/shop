@@ -94,9 +94,15 @@
 
                 <div class="reviews" id="reviews">
                     @php
-                        $myReview = $phone->reviews->firstWhere('user_id', auth()->id());
-                        $otherReviews = $phone->reviews->where('user_id', '!=', auth()->id())->unique('content');
-                    @endphp
+                        $reviews = $phone->reviews->unique('content');
+
+$myReview = auth()->check()
+    ? $reviews->firstWhere('user_id', auth()->id())
+    : null;
+
+$otherReviews = auth()->check()
+    ? $reviews->where('user_id', '!=', auth()->id())
+    : $reviews;                    @endphp
                     <h3>Отзывы</h3>
 
                     @if(session('success'))
