@@ -1,5 +1,13 @@
 <!-- resources/views/home.blade.php -->
 <x-layouts.app-shop>
+@php
+    $pageTitle = isset($brand)
+        ? $brand->name . ' | СМАРТФОНЫ'
+        : 'СМАРТФОНЫ — учебный интернет-магазин';
+@endphp
+ <x-slot name="title">
+        {{$pageTitle}}    </x-slot>
+
 
     <div class="page-layout">
 
