@@ -29,7 +29,7 @@ class ReviewController extends Controller
 
         return redirect()
             ->back()
-            ->with('success', 'Спасибо за отзыв!')
+            ->with('success', __('messages.review_added'))
             ->withFragment('reviews');
     }
 
@@ -39,7 +39,7 @@ class ReviewController extends Controller
 
         $review->delete();
 
-        return back()->with('success', 'Отзыв удален')
+        return back()->with('success', __('messages.review_deleted'))
             ->withFragment('reviews');
     }
 }
