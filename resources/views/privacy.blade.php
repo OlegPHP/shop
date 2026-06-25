@@ -42,6 +42,24 @@
             margin-bottom: 5px;
         }
 
+        @media (max-width: 480px) {
+
+            .container {
+                margin: 0;
+                padding: 20px;
+                max-width: 100%;
+                border-radius: 0;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+        }
+
 
     </style>
 
