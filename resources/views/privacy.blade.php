@@ -29,8 +29,9 @@
             margin-top: 25px;
         }
 
-        p {
+     .container p {
             margin: 10px 0;
+
         }
 
         ul {
