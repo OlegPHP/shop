@@ -21,6 +21,8 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::view('/privacy', 'privacy');
+
 Route::middleware('auth')->group(function () {
     Route::post('/phones/{phone}/reviews', [ReviewController::class, 'store'])->name('review.store');
     Route::delete('/reviews/{review}', [ReviewController::class, 'destroy'])->name('reviews.destroy');

@@ -51,7 +51,8 @@
 </main>
 
 <footer style="text-align:center; margin-top:50px; color:#666;">
-    &copy; {{ date('Y') }} Учебный интернет-магазин
+    <p>&copy; {{ date('Y') }} Учебный интернет-магазин</p>
+    <p><a href="/privacy">Политика конфиденциальности</a></p>
 </footer>
 
 </body>

@@ -36,6 +36,12 @@ footer {
     color: #666;
     padding: 20px 0;
 }
+footer p{
+      margin: 10px 0;
+  }
+footer a:hover{
+    color: #0a0a0a;
+}
 /* ===== MOBILE (временно) ===== */
 
 @media (max-width: 768px) {
