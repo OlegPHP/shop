@@ -53,5 +53,8 @@ footer a:hover{
     .right-panel {
         width: 100%;              /* панель на всю ширину */
     }
+    footer p{
+        margin: 6px 0;
+    }
 
 }
